@@ -2,38 +2,43 @@
     font-family: gilroybold;
     src: url(./Gilroy-Bold.otf);
 }
+
 @font-face {
     font-family: gilroymedium;
     src: url(./Gilroy-Medium.otf);
 }
+
 @font-face {
     font-family: gilroysemibold;
     src: url(./Gilroy-Semibold.otf);
 }
+
 @font-face {
     font-family: moranga;
     src: url(./moranga.ttf);
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html,body{
-    height: 100%;
-    width: 100%;
-  
-    background-color: black;
-}
-#page1{
-    height: 100%;
-    width: 100%;
 
+html,
+body {
+    height: 100%;
+    width: 100%;
     background-color: black;
 }
-nav{
-    background: transparent;    
+
+#page1 {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+nav {
+    background: transparent;
     height: 15vh;
     width: 100%;
     display: flex;
@@ -41,7 +46,8 @@ nav{
     align-items: center;
     padding: 1vh 5vh;
 }
-nav #logo{
+
+nav #logo {
     color: #fff;
     display: flex;
     font-size: 2.5vw;
@@ -49,21 +55,32 @@ nav #logo{
     align-items: center;
     justify-content: center;
     font-family: moranga;
-    
+
 }
-nav button{
-    background: rgb(65,211,237);
+
+nav button {
+    background: rgb(65, 211, 237);
     color: #fff;
     font-weight: 800;
     padding: 1vw 3vw;
     border-radius: 25px;
     border: none;
     font-family: gilroymedium;
-    
+    font-size: 1vw;
+
 }
-#page1 img{
-    border: 2px solid rgb(65,211,237);
-    box-shadow: 0 0 5px rgb(65,211,237), 0 0 10px rgb(65,211,237), 0 0 100px rgb(65,211,237);
+
+#mnbtn:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgb(65, 211, 237), 0 0 10px rgb(65, 211, 237);
+
+}
+
+#page1 img {
+    border: 2px solid rgb(65, 211, 237);
+    box-shadow: 0 0 5px rgb(65, 211, 237), 0 0 10px rgb(65, 211, 237), 0 0 100px rgb(65, 211, 237);
     border-radius: 25px;
     position: relative;
     top: 10%;
@@ -71,9 +88,29 @@ nav button{
     height: 35vw;
 }
 
+/* PAGE 1 RESPONSIVE NESS */
+@media(max-width:1240px){
+    nav{
+        padding: 2vw;
+    }
+    #page1 img{
+        top:40vw;
+        left:5vw;
+        height: 60vw;
+    }
+    #logo h1{
+        font-size: 6vw;
+
+    }
+    #mnbtn{
+        padding: 2vw 4vw;
+        font-size: 3vw;
+    }
+}
+
 /* page2 */
 
-#page2{
+#page2 {
     padding-left: 1vw;
     height: 100%;
     width: 100%;
@@ -84,7 +121,8 @@ nav button{
     color: white;
     overflow: hidden;
 }
-#page2 h1{
+
+#page2 h1 {
     text-transform: uppercase;
     font-family: moranga;
     font-size: 30vw;
@@ -94,7 +132,7 @@ nav button{
 
 /* page3 */
 
-#page3{
+#page3 {
     height: 100%;
     width: 100%;
     background: #000;
@@ -103,10 +141,172 @@ nav button{
     flex-direction: column;
     align-items: center;
     justify-content: top;
-    
+
 }
-#page3 h1{
+
+#page3 h1 {
     font-weight: 600;
     font-family: moranga;
     font-size: 3vw;
+}
+
+/* PAGE 3 RESPONSIVENESS */
+
+@media(max-width:1240px){
+    #page3 h1{
+        font-size: 6vw;
+    }
+    #page3 {
+        padding: 1vw;
+        justify-content: left;
+        align-items: baseline;
+
+    }
+
+}
+
+/* PAGE 4 STARTED FROM HERE  */
+
+#page4 {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 6vw;
+    padding: 2vw 1vw;
+    height: 100%;
+    width: 100%;
+    background: #222222;
+}
+
+#page4 h1 {
+    color: #fff;
+    font-family: gilroybold;
+    font-size: 6vw;
+}
+
+#page4 h2 {
+    color: #fff;
+    font-family: gilroybold;
+    font-size: 2vw;
+}
+
+#page4 h1 span {
+    color: rgb(56, 205, 250);
+    font-family: gilroybold;
+    font-size: 6vw;
+}
+
+#p4-mid #img {
+    padding: 1vw;
+
+    display: flex;
+    gap: 2vw;
+
+}
+
+#p4-mid button {
+    padding: 1vw 2vw;
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-family: gilroymedium;
+
+}
+
+#p4-mid #img img {
+    height: 8vh;
+    border: 10px solid white;
+    border-radius: 20px;
+}
+
+#p4-botm {
+    gap: 1vw;
+}
+
+#p4-botm #imgp4 {
+    padding: 1vw;
+    display: flex;
+    gap: 2vw;
+}
+
+#p4-botm #imgp4 img {
+    height: 10vh;
+    border: 10px solid white;
+    border-radius: 20px;
+
+}
+
+#p4-botm button {
+    padding: 1vw 2vw;
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-family: gilroymedium;
+}
+
+
+
+/* page 5started */
+
+#page5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    height: 100%;
+    width: 100%;
+    background: #393939;
+
+
+}
+
+#page5 h1 {
+    padding-left: 2vw;
+    color: #fff;
+    font-family: gilroybold;
+    font-size: 10vw;
+
+}
+
+#mail {
+    text-decoration: none;
+}
+
+#ig {
+    color: #f6ba53;
+    text-decoration: none;
+}
+
+#linkd {
+    color: #51cde7;
+    text-decoration: none;
+
+}
+
+#mail:hover {
+    text-decoration: line-through;
+}
+
+#ig:hover {
+    text-decoration: line-through;
+
+
+}
+
+#linkd:hover {
+    text-decoration: line-through;
+}
+
+footer {
+    height: 7vw;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h3 {
+    color: white;
+    font-size: 2vw;
 }
